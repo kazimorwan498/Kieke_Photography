@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/nexa-bold");
 
+@font-face {
+    font-family: "Nexa-Trial-Heavy";
+    src: url(./Nexa-Trial-Heavy.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -65,14 +70,22 @@ body {
     font-size: 74px;
 }
 
+.medium-text {
+    font-size: 48px;
+}
+
 .fa-nexa {
     font-family: "Nexa", sans-serif;
     font-weight: 700;
 }
 
+.fa-nexa-heavy {
+    font-family: "Nexa-Trial-Heavy";
+}
+
 .lavender-bar {
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: -75px;
         bottom: -45px;
@@ -98,7 +111,7 @@ body {
 }
 
 .scale-1-1 {
-    scale: 1.1
+    scale: 1.1;
 }
 
 .top-100px {
