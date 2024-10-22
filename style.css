@@ -19,6 +19,10 @@
     --lavender-clr: rgb(138, 71, 246);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100vw;
     height: auto;
