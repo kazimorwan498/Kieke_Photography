@@ -74,6 +74,10 @@ body {
     bottom: -100px;
 }
 
+.top-180px {
+    top: -180px;
+}
+
 .nav-link-hover {
     &:hover {
         color: var(--orange-clr) !important;
@@ -173,5 +177,18 @@ body {
         color: #fff;
         background-color: transparent;
         border: 2px solid #fff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lavender-bar::after {
+        left: -120px;
+        bottom: -35px;
+        height: 15px;
+        width: 170px;
+    }
+
+    .h-500px-w-456px {
+        width: 400px;
     }
 }
