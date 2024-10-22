@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+@import url("https://fonts.cdnfonts.com/css/nexa-bold");
 
 * {
     margin: 0;
@@ -12,6 +12,11 @@
     --orange-clr: rgb(254, 140, 69);
     --orange-active-clr: rgb(214, 121, 62);
     --lavender-clr: rgb(138, 71, 246);
+}
+
+body {
+    width: 100vw;
+    height: auto;
 }
 
 .btn-orange {
@@ -57,19 +62,45 @@
 }
 
 .large-text {
-    font-size: 70px;
+    font-size: 74px;
 }
 
 .fa-nexa {
-    font-family: 'Nexa', sans-serif;
+    font-family: "Nexa", sans-serif;
     font-weight: 700;
 }
 
 .lavender-bar {
-    right: 70px;
-    top: 185px;
-    height: 25px;
-    width: 240px;
-    background-color: var(--lavender-clr);
-    border-radius: 20px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: -75px;
+        bottom: -45px;
+        height: 25px;
+        width: 240px;
+        background-color: var(--lavender-clr);
+        border-radius: 20px;
+    }
+}
+
+.w-713px {
+    width: 713px;
+}
+
+.h-680px {
+    height: 680px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.scale-1-1 {
+    scale: 1.1
+}
+
+.top-100px {
+    top: 100px;
 }
