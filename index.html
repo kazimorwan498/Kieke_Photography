@@ -75,13 +75,15 @@
                 </ul>
 
                 <button
-                    class="btn btn-orange text-white btn-lg rounded-5 px-5 d-none d-sm-inline-flex fw-medium"
+                    class="btn btn-orange text-white custom-btn rounded-5 px-5 d-none d-sm-inline-flex fw-medium btn-active transition-0-2s"
                     type="button"
                 >
                     Get Started
                 </button>
 
-                <button class="btn text-white hamburger d-sm-none">
+                <button
+                    class="btn text-white hamburger d-sm-none btn-active transition-0-2s"
+                >
                     <span class="material-symbols-outlined fs-2">menu</span>
                 </button>
             </div>
@@ -99,9 +101,11 @@
                 class="row my-5 mx-0 align-items-center justify-content-between g-0"
             >
                 <div
-                    class="col-12 col-xl-5 position-relative mb-5 pb-5 ps-5 me-0 me-lg-5"
+                    class="col-12 col-xl-5 position-relative mb-0 mb-md-5 pb-5 px-3 ps-md-5 pe-sm-0 me-0 me-lg-5"
                 >
-                    <h1 class="large-text text-dark fa-nexa-heavy text-nowrap">
+                    <h1
+                        class="large-text text-dark fa-nexa-heavy text-nowrap mb-3"
+                    >
                         CAPTURING <br />
                         MOMENTS
                         <span
@@ -112,12 +116,12 @@
                         TIME
                     </h1>
 
-                    <p class="text-secondary fs-5">
+                    <p class="fs-5 p-sm text-secondary mb-5">
                         A Glimpse into the Past, a Snapshot of the Present.
                     </p>
 
                     <button
-                        class="btn btn-orange text-white btn-lg rounded-5 px-5 fw-medium"
+                        class="btn btn-orange text-white custom-btn rounded-5 padding-x fw-medium btn-active transition-0-2s"
                         type="button"
                     >
                         Get Started
@@ -125,7 +129,7 @@
                 </div>
 
                 <div
-                    class="col-12 col-xl-6 ps-5 d-flex flex-column gap-5 align-items-center"
+                    class="col-12 col-xl-6 ps-5 pe-5 pe-md-0 d-flex flex-column gap-5 align-items-center"
                 >
                     <div class="d-flex overflow-auto gap-5">
                         <img
@@ -136,17 +140,35 @@
                         <img
                             class="rounded-4 img-fluid object-fit-cover h-100"
                             src="./img/photography_2.jpg"
-                            alt="photography_1"
+                            alt="photography_2"
                         />
                         <img
-                            class="rounded-4 img-fluid object-fit-cover h-100 me-5"
+                            class="rounded-4 img-fluid object-fit-cover h-100"
                             src="./img/photography_1.jpg"
                             alt="photography_1"
                         />
+                        <img
+                            class="rounded-4 img-fluid object-fit-cover h-100"
+                            src="./img/photography_2.jpg"
+                            alt="photography_2"
+                        />
+                        <img
+                            class="rounded-4 img-fluid object-fit-cover h-100"
+                            src="./img/photography_1.jpg"
+                            alt="photography_1"
+                        />
+                        <img
+                            class="rounded-4 img-fluid object-fit-cover h-100 me-0 me-md-5"
+                            src="./img/photography_2.jpg"
+                            alt="photography_2"
+                        />
                     </div>
 
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-2">
                         <div class="bg-lavender dot scale-1-1"></div>
+                        <div class="bg-secondary-subtle dot"></div>
+                        <div class="bg-secondary-subtle dot"></div>
+                        <div class="bg-secondary-subtle dot"></div>
                         <div class="bg-secondary-subtle dot"></div>
                         <div class="bg-secondary-subtle dot"></div>
                     </div>
@@ -155,52 +177,54 @@
         </div>
 
         <!-- About us section -->
-        <div class="container-fluid p-5 bg-secondary-subtle" id="about">
-            <div class="row justify-content-center gap-5">
-                <div
-                    class="col-12 col-lg-auto d-flex justify-content-center gap-4 py-1"
-                    style="height: 540px"
-                >
-                    <div style="height: 100%">
-                        <img
-                            class="rounded-4 h-100 img-fluid"
-                            src="./img/photography_3.jpg"
-                            alt=""
-                        />
+        <div
+            class="container-fluid px-4 py-5 px-md-5 bg-secondary-subtle"
+            id="about"
+        >
+            <div class="row align-items-center justify-content-center gap-5">
+                <div class="col img-gallery py-2 mx-auto">
+                    <div class="column">
+                        <div class="photo">
+                            <img
+                                class="shadow rounded-4"
+                                src="./img/photography_3.jpg"
+                                alt=""
+                            />
+                        </div>
                     </div>
-
-                    <div
-                        class="d-flex flex-column justify-content-center gap-4"
-                        style="height: 100%"
-                    >
-                        <img
-                            class="rounded-4 img-fluid"
-                            src="./img/photography_4.jpg"
-                            alt=""
-                        />
-                        <img
-                            class="rounded-4 img-fluid"
-                            src="./img/photography_5.jpg"
-                            alt=""
-                        />
+                    <div class="column gap-0 justify-content-between">
+                        <div class="photo">
+                            <img
+                                class="shadow rounded-4"
+                                src="./img/photography_4.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="photo">
+                            <img
+                                class="shadow rounded-4"
+                                src="./img/photography_5.jpg"
+                                alt=""
+                            />
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-xl-6">
-                    <p class="fs-5">
+                    <p class="fs-5 p-sm">
                         <span class="text-lavender"> --- </span> About Us
                     </p>
 
                     <h2 class="medium-text fa-nexa-heavy mb-4">
                         We Are Very
                         <span class="text-lavender fa-nexa-heavy">Skilled</span>
-                        In <br />
+                        In
                         <span class="text-lavender fa-nexa-heavy"
                             >Photography</span
                         >
                     </h2>
 
-                    <p class="fs-5 mb-4">
+                    <p class="fs-5 p-sm mb-4">
                         Hi, I'm Angelique and photography is my passion! My
                         father passed on the “photographer virus” to me. From
                         analogue to digital. I have taken a number of courses
@@ -211,13 +235,13 @@
                         always fun!
                     </p>
 
-                    <p class="fs-5 mb-5">
+                    <p class="fs-5 p-sm mb-5">
                         “Photography is the art of frozen time… the ability to
                         store emotions and feelings within a frame.”
                     </p>
 
                     <button
-                        class="btn btn-orange text-white btn-lg rounded-5 px-5 fw-medium"
+                        class="btn btn-orange text-white custom-btn rounded-5 padding-x fw-medium btn-active transition-0-2s"
                         type="button"
                     >
                         See Our Portfolio
@@ -227,7 +251,10 @@
         </div>
 
         <!-- Portfolio section -->
-        <div class="container-fluid p-5 position-relative">
+        <div
+            class="container-fluid px-4 py-5 px-md-5 position-relative"
+            id="portfolio"
+        >
             <img
                 class="position-absolute end-0 img-fluid"
                 src="./img/blur_ellipse_1.png"
@@ -238,14 +265,14 @@
                 src="./img/blur_ellipse_2.png"
                 alt="blur_ellipse_2"
             />
-            <div class="row py-5 mt-5 text-center">
+            <div class="row pt-5 mt-5 text-center">
                 <h2 class="medium-text fa-nexa-heavy mb-5">
                     Our
                     <span class="fa-nexa-heavy text-lavender">Portfolio</span>
                 </h2>
 
                 <ul
-                    class="navbar nav w-75 mx-auto bg-white rounded-3 shadow py-2 px-5 fs-5 fw-medium d-flex flex-column flex-sm-row text-center gap-0"
+                    class="navbar nav w-100 mx-auto bg-white rounded-3 shadow py-2 px-0 px-md-5 fs-5 fw-medium d-flex flex-column flex-md-row text-center gap-0"
                 >
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">All</a>
@@ -270,7 +297,7 @@
                     </li>
                 </ul>
 
-                <div class="img-gallery py-2 mt-5 mx-auto">
+                <div class="img-gallery py-2 px-0 mt-5">
                     <div class="column">
                         <div class="photo">
                             <img
@@ -352,17 +379,20 @@
         </div>
 
         <!-- Price section -->
-        <div class="container-fluid p-5 position-relative z-2">
-            <div class="row py-5 text-center justify-content-center">
+        <div
+            class="container-fluid px-4 py-5 px-md-5 position-relative z-2"
+            id="prices"
+        >
+            <div class="row pb-5 text-center justify-content-center">
                 <h2 class="medium-text fa-nexa-heavy">Prices</h2>
 
                 <div
                     class="row w-100 justify-content-center align-items-center gap-5 mt-5 row-cols-lg-2"
                 >
                     <div
-                        class="card col-12 col-sm-7 col-lg-3 shadow p-5 h-500px-w-456px justify-content-between align-items-center"
+                        class="card col-12 col-sm-7 col-lg-3 shadow p-5 h-500px-w-350px justify-content-between align-items-center"
                     >
-                        <h3 class="fa-nexa-heavy fs-4 mb-5">
+                        <h3 class="fa-nexa-heavy fs-4">
                             Children photography, family, pregnancy, loveshoot
                         </h3>
 
@@ -377,7 +407,7 @@
                         </p>
 
                         <button
-                            class="btn btn-orange text-white rounded-5 px-5 fw-medium"
+                            class="btn btn-orange text-white rounded-5 padding-x fw-medium btn-active transition-0-2s"
                             type="button"
                         >
                             Get Purchase
@@ -385,9 +415,9 @@
                     </div>
 
                     <div
-                        class="card col-12 col-sm-7 col-lg-3 shadow p-5 h-500px-w-456px justify-content-between bg-dark text-white align-items-center"
+                        class="card col-12 col-sm-7 col-lg-3 shadow p-5 h-500px-w-350px justify-content-between bg-dark text-white align-items-center"
                     >
-                        <h3 class="fa-nexa-heavy fs-4 mb-5">
+                        <h3 class="fa-nexa-heavy fs-4">
                             Lifestyle Photography
                         </h3>
 
@@ -402,7 +432,7 @@
                         </p>
 
                         <button
-                            class="btn card-2nd-outline rounded-5 px-5 fw-medium"
+                            class="btn card-2nd-outline rounded-5 padding-x fw-medium btn-active transition-0-2s"
                             type="button"
                         >
                             Get Purchase
@@ -410,11 +440,9 @@
                     </div>
 
                     <div
-                        class="card col-12 col-sm-7 col-lg-3 shadow p-5 h-500px-w-456px justify-content-between align-items-center"
+                        class="card col-12 col-sm-7 col-lg-3 shadow p-5 h-500px-w-350px justify-content-between align-items-center"
                     >
-                        <h3 class="fa-nexa-heavy fs-4 mb-5">
-                            Portrait Photography
-                        </h3>
+                        <h3 class="fa-nexa-heavy fs-4">Portrait Photography</h3>
 
                         <p>
                             Portrait photography and girlfriend shoots are also
@@ -426,7 +454,7 @@
                         </p>
 
                         <button
-                            class="btn btn-orange text-white rounded-5 px-5 fw-medium"
+                            class="btn btn-orange text-white rounded-5 padding-x fw-medium btn-active transition-0-2s"
                             type="button"
                         >
                             Get Purchase
@@ -438,7 +466,7 @@
 
         <!-- Testimonial Section -->
         <div
-            class="container-fluid p-5 bg-secondary-subtle position-relative z-1"
+            class="container-fluid px-3 px-sm-5 py-5 bg-secondary-subtle position-relative z-1"
         >
             <img
                 class="position-absolute end-0 top-180px img-fluid z-n1"
@@ -447,17 +475,17 @@
             />
 
             <div
-                class="row py-5 px-0 px-md-5 justify-content-center justify-content-xl-between align-items-center row-gap-5"
+                class="row py-0 py-sm-5 px-0 px-md-5 justify-content-center justify-content-xl-between align-items-center row-gap-5"
             >
                 <div class="col-12 col-xl-6">
-                    <p class="fs-5">
+                    <p class="fs-5 p-sm">
                         <span class="text-lavender"> --- </span> Testimonials
                     </p>
                     <h2 class="medium-text fa-nexa-heavy mb-4">
                         What Our Clients Say
                     </h2>
 
-                    <p class="fs-5 mb-4">
+                    <p class="fs-5 p-sm mb-4">
                         This photography website is a true gem for anyone who
                         appreciates artistry and storytelling through the lens.
                         The images are awe-inspiring, and the website provides
@@ -471,7 +499,7 @@
                         class="d-flex flex-column flex-sm-row gap-5 align-items-center"
                     >
                         <p
-                            class="btn bg-secondary rounded-5 w-auto p-1 pe-3 m-0 d-flex align-items-center"
+                            class="btn bg-secondary rounded-5 w-auto p-1 pe-3 m-0 d-flex align-items-center btn-active transition-0-2s"
                         >
                             <img
                                 class="object-fit-cover rounded-5 me-3"
@@ -482,20 +510,25 @@
                                 style="transform: rotateY(180deg)"
                             />
 
-                            <span class="fs-5 text-white">Amane Indahnya</span>
+                            <span class="fs-5 p-sm text-white"
+                                >Amane Indahnya</span
+                            >
                         </p>
 
                         <div class="col-auto d-flex gap-3">
                             <span
-                                class="material-symbols-outlined btn p-3 border border-2 border-dark rounded-5 fs-4"
+                                class="material-symbols-outlined d-flex align-items-center justify-content-center btn border border-2 border-dark rounded-5 hover-scale-1-1 btn-active transition-0-2s"
+                                style="width: 50px; height: 50px"
                             >
-                                arrow_left_alt
+                                arrow_back
                             </span>
 
                             <span
-                                class="material-symbols-outlined btn p-3 border border-2 border-dark rounded-5 fs-4"
-                                >arrow_forward</span
+                                class="material-symbols-outlined d-flex align-items-center justify-content-center btn border border-2 border-dark rounded-5 hover-scale-1-1 btn-active transition-0-2s"
+                                style="width: 50px; height: 50px"
                             >
+                                arrow_forward
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -513,13 +546,13 @@
         </div>
 
         <!-- Instagram Feed Section -->
-        <div class="container-fluid p-5 position-relative">
-            <div class="row px-0 px-md-5">
+        <div class="container-fluid px-3 py-5 px-md-5 position-relative">
+            <div class="row px-0 px-lg-5">
                 <div class="d-flex justify-content-between align-items-center">
                     <h2 class="medium-text fa-nexa-heavy">Instagram Feed</h2>
 
                     <button
-                        class="btn btn-orange text-white btn-lg rounded-5 px-5 fw-medium"
+                        class="btn btn-orange text-white custom-btn rounded-5 padding-x fw-medium text-nowrap btn-active transition-0-2s"
                         type="button"
                     >
                         Join Now
@@ -579,16 +612,19 @@
             </div>
 
             <img
-                class="position-absolute bottom-150px-start-150px img-fluid z-n1"
+                class="position-absolute bottom-100px-start-150px img-fluid z-n1"
                 src="./img/blur_ellipse_2.png"
                 alt="blur_ellipse_1"
             />
         </div>
 
         <!-- Have A Question? section -->
-        <div class="container-fluid p-5 my-5">
-            <div class="row p-0">
-                <div class="col-12 col-lg-7">
+        <div
+            class="container-fluid pt-0 pt-md-5 pb-5 my-0 my-lg-5"
+            id="contact"
+        >
+            <div class="row py-0 px-4 px-md-5 row-gap-5">
+                <div class="col-12 col-lg-7 px-0 px-lg-3">
                     <h2 class="medium-text fa-nexa-heavy">Have A Question?</h2>
 
                     <p>
@@ -632,7 +668,9 @@
                     </form>
                 </div>
 
-                <div class="col-12 col-lg-5 bg-secondary-subtle p-4 rounded-4">
+                <div
+                    class="col-12 col-lg-5 d-flex flex-column justify-content-evenly bg-secondary-subtle p-4 rounded-4"
+                >
                     <h3 class="fs-2 fw-bold">Get In Touch!</h3>
 
                     <p class="mb-4">
@@ -640,41 +678,44 @@
                         here to chat.
                     </p>
 
-                    <div class="d-flex gap-4 mb-5">
+                    <div class="d-flex fd-column ali-center gap-4 mb-5">
                         <span
-                            class="material-symbols-outlined p-3 bg-lavender rounded-5 text-white"
+                            class="material-symbols-outlined p-3 bg-lavender rounded-5 text-white d-flex align-items-center justify-content-center"
+                            style="width: 50px; height: 50px"
                         >
                             location_on
                         </span>
 
                         <div>
-                            <h5 class="fw-bold">Location:</h5>
+                            <h5 class="fw-bold txt-center">Location:</h5>
                             <span>199 Nueces ST,Austin,TX 78701</span>
                         </div>
                     </div>
 
-                    <div class="d-flex gap-4 mb-5">
+                    <div class="d-flex fd-column ali-center gap-4 mb-5">
                         <span
-                            class="material-symbols-outlined p-3 bg-lavender rounded-5 text-white"
+                            class="material-symbols-outlined p-3 bg-lavender rounded-5 text-white d-flex align-items-center justify-content-center"
+                            style="width: 50px; height: 50px"
                         >
                             phone_in_talk
                         </span>
 
                         <div>
-                            <h5 class="fw-bold">Phone:</h5>
+                            <h5 class="fw-bold txt-center">Phone:</h5>
                             <span>+1(456)666-4077</span>
                         </div>
                     </div>
 
-                    <div class="d-flex gap-4">
+                    <div class="d-flex fd-column ali-center gap-4">
                         <span
-                            class="material-symbols-outlined p-3 bg-lavender rounded-5 text-white"
+                            class="material-symbols-outlined p-3 bg-lavender rounded-5 text-white d-flex align-items-center justify-content-center"
+                            style="width: 50px; height: 50px"
                         >
                             mail
                         </span>
 
                         <div>
-                            <h5 class="fw-bold">Email:</h5>
+                            <h5 class="fw-bold txt-center">Email:</h5>
                             <span>kazimdmorwan498@gmail.com</span>
                         </div>
                     </div>
@@ -683,19 +724,17 @@
         </div>
 
         <!-- Footer section -->
-        <footer
-            class="container-fluid px-5 py-4 bg-dark d-flex align-items-center justify-content-between"
-        >
+        <footer class="container-fluid px-5 py-4 bg-dark d-grid row-gap-4">
             <img
                 src="./img/logo.png"
                 alt="logo"
                 style="filter: grayscale(1) brightness(10)"
             />
 
-            <ul class="navbar nav p-0">
+            <ul class="navbar nav p-0 jc-content">
                 <li class="nav-item">
                     <a
-                        class="nav-link text-white text-decoration-underline"
+                        class="nav-link text-white text-decoration-underline nav-link-hover"
                         href="#"
                     >
                         Privacy Policy
@@ -703,7 +742,7 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        class="nav-link text-white text-decoration-underline"
+                        class="nav-link text-white text-decoration-underline nav-link-hover"
                         href="#"
                     >
                         Terms & Conditions
@@ -714,7 +753,7 @@
             <ul class="navbar nav p-0 gap-3">
                 <li class="nav-item" style="width: 50px; height: 50px">
                     <a
-                        class="nav-link bg-white text-dark rounded-5 h-100 w-100 fs-5 d-flex align-items-center justify-content-center"
+                        class="nav-link card-2nd-outline rounded-5 h-100 w-100 fs-5 d-flex align-items-center justify-content-center btn-active transition-0-2s"
                         href="#"
                     >
                         <i class="fa-brands fa-facebook-f"></i>
@@ -722,7 +761,7 @@
                 </li>
                 <li class="nav-item" style="width: 50px; height: 50px">
                     <a
-                        class="nav-link bg-white text-dark rounded-5 h-100 w-100 fs-5 d-flex align-items-center justify-content-center"
+                        class="nav-link card-2nd-outline rounded-5 h-100 w-100 fs-5 d-flex align-items-center justify-content-center btn-active transition-0-2s"
                         href="#"
                     >
                         <i class="fa-brands fa-instagram"></i>
@@ -730,7 +769,7 @@
                 </li>
                 <li class="nav-item" style="width: 50px; height: 50px">
                     <a
-                        class="nav-link bg-white text-dark rounded-5 h-100 w-100 fs-5 d-flex align-items-center justify-content-center"
+                        class="nav-link card-2nd-outline rounded-5 h-100 w-100 fs-5 d-flex align-items-center justify-content-center btn-active transition-0-2s"
                         href="#"
                     >
                         <i class="fa-brands fa-x-twitter"></i>
