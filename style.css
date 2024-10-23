@@ -65,7 +65,7 @@ body {
     left: -80px;
 }
 
-.bottom-100px-start-100px {
+.bottom-150px-start-150px {
     bottom: -150px;
     left: -150px;
 }
@@ -177,6 +177,10 @@ body {
         background-color: transparent;
         border: 2px solid #fff;
     }
+}
+
+form div {
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 500px) {
